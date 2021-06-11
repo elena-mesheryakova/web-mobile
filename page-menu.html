@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ristoranta</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/magnific-popup.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header class="header">
+          <div class="container">
+            <div class="menu__header menu__header--menu">
+              <a class="menu__btn" href="#">
+                <img src="./img/back-menu.svg" alt="" />
+              </a>
+              <div class="menu__text">Меню</div>
+              <div class="menu__basket">
+                <a href="#">
+                  <img src="./img/basket.svg" alt="" /><span>10</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="main">
+          <div class="container">
+            <div class="menu__filter">
+              <a class="menu__filter-item" href="#">Салаты</a>
+              <a class="menu__filter-item" href="#">Закуски</a>
+              <a class="menu__filter-item active" href="#">Супы</a>
+              <a class="menu__filter-item active" href="#">Горячие блюда</a>
+              <a class="menu__filter-item" href="#">Десерты</a>
+            </div>
+
+            <h2 class="menu__title">Супы</h2>
+            <div class="menu__inner">
+              <a class="popup-with-form" href="#product-popup">
+                <div class="menu__product">
+                  <div class="menu__product-img">
+                    <!-- <img src="" alt="" /> -->
+                    <span>Spicy</span>
+                  </div>
+                  <div class="menu__product-wrap">
+                    <div class="menu__product-title">Суп грибной</div>
+                    <div class="menu__product-info">190 г</div>
+                  </div>
+                  <button class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </button>
+                </div>
+                <div class="product__popup">
+                  <form
+                    id="product-popup"
+                    class="
+                      menu__comment menu__comment--popup
+                      mfp-hide
+                      white-popup-block white-popup-block--product
+                    "
+                  >
+                    <div class="product__menu-item">
+                      <div class="product__menu-images">
+                        <!-- <img src="" alt="" /> -->
+                        <span>Spicy</span>
+                      </div>
+                      <div class="product__menu-wrap">
+                        <div class="product__menu-title">Суп грибной</div>
+                        <div class="product__menu-descr">
+                          Белое куриное мясо в хрустящей панировке, ломтик
+                          помидора, листья салата и ломтики твёрдого сыра,
+                          заправленные специальным соусом и завёрнутые в
+                          пшеничную лепёшку
+                        </div>
+                      </div>
+                      <div class="product__menu-info">
+                        <div class="product__menu-info-inner accordion-header">
+                          <div class="product__menu-info-img">
+                            <img src="./img/info.svg" alt="" />
+                          </div>
+                          <div class="product__menu-info-text">О продукте</div>
+                        </div>
+                        <div class="product__menu-box accordion-body">
+                          <table class="cart-product__info-table">
+                            <tr class="cart-product__info-table-row">
+                              <td class="cart-product__info-table-desc">Вес</td>
+                              <td class="cart-product__info-table-price">
+                                190 г
+                              </td>
+                            </tr>
+                            <tr class="cart-product__info-table-row">
+                              <td class="cart-product__info-table-desc">
+                                Энергетическая ценность
+                              </td>
+                              <td class="cart-product__info-table-price">
+                                552 ккал
+                              </td>
+                            </tr>
+                            <tr class="cart-product__info-table-row">
+                              <td class="cart-product__info-table-desc">
+                                Жиры
+                              </td>
+                              <td class="cart-product__info-table-price">
+                                46%
+                              </td>
+                            </tr>
+                            <tr class="cart-product__info-table-row">
+                              <td class="cart-product__info-table-desc">
+                                Углеводы
+                              </td>
+                              <td class="cart-product__info-table-price">
+                                18%
+                              </td>
+                            </tr>
+                            <tr class="cart-product__info-table-row">
+                              <td class="cart-product__info-table-desc">
+                                Белки
+                              </td>
+                              <td class="cart-product__info-table-price">
+                                38%
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="product__menu-btn">
+                        <input type="number" name="product" id="number" />
+                        <label class="product__menu-label" for="number"
+                          ><span> 225 ₽</span></label
+                        >
+
+                        <button class="menu-plus">
+                          <img src="./img/plus.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </a>
+              <a class="popup-with-form" href="#product-popup">
+                <div class="menu__product">
+                  <div class="menu__product-img">
+                    <!-- <img src="" alt="" /> -->
+                  </div>
+                  <div class="menu__product-wrap">
+                    <div class="menu__product-title">
+                      Солянка сборная по-домашнему
+                    </div>
+                    <div class="menu__product-info">190 г</div>
+                  </div>
+                  <button class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </button>
+                </div>
+                <div class="product__popup">
+                  <form
+                    id="product-popup"
+                    class="
+                      menu__comment menu__comment--popup
+                      mfp-hide
+                      white-popup-block white-popup-block--product
+                    "
+                  >
+                    <div class="product__menu-item">
+                      <div class="product__menu-images">
+                        <!-- <img src="" alt="" /> -->
+                        <span>Spicy</span>
+                      </div>
+                      <div class="product__menu-wrap">
+                        <div class="product__menu-title">Суп грибной</div>
+                        <div class="product__menu-descr">
+                          Белое куриное мясо в хрустящей панировке, ломтик
+                          помидора, листья салата и ломтики твёрдого сыра,
+                          заправленные специальным соусом и завёрнутые в
+                          пшеничную лепёшку
+                        </div>
+                      </div>
+                      <div class="product__menu-info">
+                        <div class="product__menu-info-inner accordion-header">
+                          <div class="product__menu-info-img">
+                            <img src="./img/info.svg" alt="" />
+                          </div>
+                          <div class="product__menu-info-text">О продукте</div>
+
+                          <div class="product-svg">
+                            <object
+                              type="image/svg+xml"
+                              data="./img/arrow-product-popup.svg"
+                            ></object>
+                          </div>
+                        </div>
+                        <div class="product__menu-box accordion-body">
+                          <table class="cart-product__info-table">
+                            <tr class="cart-product__info-table-row">
+                              <td class="cart-product__info-table-desc">Вес</td>
+                              <td class="cart-product__info-table-price">
+                                190 г
+                              </td>
+                            </tr>
+                            <tr class="cart-product__info-table-row">
+                              <td class="cart-product__info-table-desc">
+                                Энергетическая ценность
+                              </td>
+                              <td class="cart-product__info-table-price">
+                                552 ккал
+                              </td>
+                            </tr>
+                            <tr class="cart-product__info-table-row">
+                              <td class="cart-product__info-table-desc">
+                                Жиры
+                              </td>
+                              <td class="cart-product__info-table-price">
+                                46%
+                              </td>
+                            </tr>
+                            <tr class="cart-product__info-table-row">
+                              <td class="cart-product__info-table-desc">
+                                Углеводы
+                              </td>
+                              <td class="cart-product__info-table-price">
+                                18%
+                              </td>
+                            </tr>
+                            <tr class="cart-product__info-table-row">
+                              <td class="cart-product__info-table-desc">
+                                Белки
+                              </td>
+                              <td class="cart-product__info-table-price">
+                                38%
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="product__menu-btn">
+                        <button class="menu-minus">
+                          <img src="./img/minus.svg" alt="" />
+                        </button>
+                        <input type="number" name="product" id="number" />
+                        <label class="product__menu-label" for="number"
+                          ><span> 225 ₽</span></label
+                        >
+
+                        <button class="menu-plus">
+                          <img src="./img/plus.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="menu__product">
+                  <div class="menu__product-img">
+                    <!-- <img src="" alt="" /> -->
+                  </div>
+                  <div class="menu__product-wrap">
+                    <div class="menu__product-title">Суп грибной</div>
+                    <div class="menu__product-info">190 г</div>
+                  </div>
+
+                  <button class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </button>
+                </div>
+              </a>
+              <a href="#">
+                <div class="menu__product">
+                  <div class="menu__product-img">
+                    <!-- <img src="" alt="" /> -->
+                  </div>
+                  <div class="menu__product-wrap">
+                    <div class="menu__product-title">
+                      Солянка сборная по-домашнему
+                    </div>
+                    <div class="menu__product-info">190 г</div>
+                  </div>
+
+                  <button class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </button>
+                </div>
+              </a>
+            </div>
+
+            <h2 class="menu__title">Горячие блюда</h2>
+            <div class="menu__inner">
+              <a href="#">
+                <div class="menu__product">
+                  <div class="menu__product-img">
+                    <!-- <img src="" alt="" /> -->
+                    <span>Spicy</span>
+                  </div>
+                  <div class="menu__product-wrap">
+                    <div class="menu__product-title">Жареная треска</div>
+                    <div class="menu__product-info">190 г</div>
+                  </div>
+
+                  <button class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </button>
+                </div>
+              </a>
+              <a href="#">
+                <div class="menu__product">
+                  <div class="menu__product-img">
+                    <!-- <img src="" alt="" /> -->
+                  </div>
+                  <div class="menu__product-wrap">
+                    <div class="menu__product-title">
+                      Шашлык из куриного бедра
+                    </div>
+                    <div class="menu__product-info">190 г</div>
+                  </div>
+
+                  <button class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </button>
+                </div>
+              </a>
+              <a href="#">
+                <div class="menu__product">
+                  <div class="menu__product-img">
+                    <!-- <img src="" alt="" /> -->
+                    <span>Spicy</span>
+                  </div>
+                  <div class="menu__product-wrap">
+                    <div class="menu__product-title">Жареная треска</div>
+                    <div class="menu__product-info">190 г</div>
+                  </div>
+
+                  <button class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </button>
+                </div>
+              </a>
+              <a href="#">
+                <div class="menu__product">
+                  <div class="menu__product-img">
+                    <!-- <img src="" alt="" /> -->
+                  </div>
+                  <div class="menu__product-wrap">
+                    <div class="menu__product-title">
+                      Шашлык из куриного бедра
+                    </div>
+                    <div class="menu__product-info">190 г</div>
+                  </div>
+
+                  <button class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </button>
+                </div>
+              </a>
+              <a href="#">
+                <div class="menu__product">
+                  <div class="menu__product-img">
+                    <!-- <img src="" alt="" /> -->
+                  </div>
+                  <div class="menu__product-wrap">
+                    <div class="menu__product-title">Жареная треска</div>
+                    <div class="menu__product-info">190 г</div>
+                  </div>
+
+                  <button class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </button>
+                </div>
+              </a>
+              <a href="#">
+                <div class="menu__product">
+                  <div class="menu__product-img">
+                    <!-- <img src="" alt="" /> -->
+                  </div>
+                  <div class="menu__product-wrap">
+                    <div class="menu__product-title">
+                      Шашлык из куриного бедра
+                    </div>
+                    <div class="menu__product-info">190 г</div>
+                  </div>
+
+                  <button class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer__menu">
+        <div class="container">
+          <div class="footer__items">
+            <a class="popup-with-form" href="#megafone"
+              ><div class="footer__item">
+                <img src="./img/frame.svg" alt="" />
+                <div class="footer__item-img">
+                  <img src="./img/megaphone-footer.png" alt="" />
+                </div>
+                <div class="footer__item-text footer__item-text--megafone">
+                  Официант
+                </div>
+              </div>
+            </a>
+            <div class="comment-form__popup">
+              <form
+                id="megafone"
+                class="
+                  menu__comment menu__comment--popup menu__comment--footer
+                  mfp-hide
+                  white-popup-block white-popup-block--footer
+                "
+              >
+                <div class="comment-form__inner">
+                  <div class="comment-form__img">
+                    <img src="./img/megafone-small.svg" alt="" />
+                  </div>
+                  <div class="comment-form__text">Позвать официанта</div>
+                </div>
+                <div class="form-footer">
+                  <textarea
+                    class="textarea-footer"
+                    placeholder="Добавить комментарий"
+                  ></textarea>
+                  <div class="menu__comment-btn menu__comment-btn--popup">
+                    <button type="submit">Окей</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <a class="popup-with-form" href="#pay">
+              <div class="footer__item">
+                <img src="./img/frame.svg" alt="" />
+                <div class="footer__item-img footer__item-img--pay">
+                  <img src="./img/pay-footer.png" alt="" />
+                </div>
+                <div class="footer__item-text footer__item-text--pay">Счёт</div>
+              </div>
+            </a>
+            <div class="comment-form__popup">
+              <form
+                id="pay"
+                class="
+                  menu__comment menu__comment--popup menu__comment--footer
+                  mfp-hide
+                  white-popup-block white-popup-block--pay
+                "
+              >
+                <div class="comment-form__inner">
+                  <div class="comment-form__img">
+                    <img src="./img/pay-small.svg" alt="" />
+                  </div>
+                  <div class="comment-form__text">Позвать официанта</div>
+                </div>
+                <div class="form-footer">
+                  <textarea
+                    class="textarea-footer"
+                    placeholder="Добавить комментарий"
+                  ></textarea>
+                  <div class="menu__comment-radio">
+                    <input
+                      class="menu__comment-input"
+                      type="radio"
+                      name="pay"
+                      value="cart"
+                      id="cart"
+                      checked
+                    />
+                    <label class="menu__comment-label" for="cart"
+                      >Оплата картой</label
+                    >
+                    <input
+                      class="menu__comment-input"
+                      type="radio"
+                      name="pay"
+                      value="cash"
+                      id="cash"
+                    />
+                    <label class="menu__comment-label" for="cash"
+                      >Оплата наличными</label
+                    >
+                  </div>
+                  <div class="menu__comment-btn">
+                    <button type="submit">Окей</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <a href="#">
+              <div class="footer__item">
+                <img src="./img/frame.svg" alt="" />
+                <div class="footer__item-img">
+                  <img src="./img/coins-footer.png" alt="" />
+                </div>
+                <div class="footer__item-text footer__item-text--coins">
+                  Чаевые
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/main.js
+    "></script>
+  </body>
+</html>

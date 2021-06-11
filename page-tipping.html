@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ristoranta</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/magnific-popup.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <main class="page-tipping">
+          <div class="tipping__header">
+            <a class="menu__btn" href="#">
+              <img src="./img/back-menu.svg" alt="" />
+            </a>
+          </div>
+          <div class="container">
+            <div class="tipping__bg"><img src="./img/coins.svg" alt="" /></div>
+
+            <h2 class="tipping__title">Оставить чаевые</h2>
+
+            <form class="tipping__form">
+              <div class="tipping__form-inner">
+                <div class="tipping__input">
+                  <div class="tipping__input-text">Введите сумму</div>
+                  <input class="tipping__input-cash" type="text" />
+                  <span>₽</span>
+                </div>
+                <div class="tipping__radio">
+                  <input type="radio" name="cash" value="xs" id="xs" checked />
+                  <label for="xs">100 ₽</label>
+
+                  <input type="radio" name="cash" value="s" id="s" />
+                  <label for="s">200 ₽</label>
+
+                  <input type="radio" name="cash" value="m" id="m" />
+                  <label for="m">300 ₽</label>
+
+                  <input type="radio" name="cash" value="l" id="l" />
+                  <label for="l">500 ₽</label>
+                </div>
+                <textarea
+                  class="tipping__input-textarea"
+                  placeholder="Добавить комментарий"
+                ></textarea>
+              </div>
+
+              <a href="#" class="googlepay"> Pay</a>
+              <a href="#" class="bankcard">Банковская карта</a>
+
+              <div class="tipping__label">
+                Совершая платеж, вы соглашаетесь с
+                <a href="#">условиями</a> сервиса.
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__text">
+          Разработано студией Артель с божьей помощью. Хотите так же? Пишите нам
+          artel-studio@yandex.ru
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.formstyler.min.js"></script>
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/main.js
+    "></script>
+  </body>
+</html>

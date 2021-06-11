@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ristoranta</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/magnific-popup.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="page page__home">
+      <div class="wrapper">
+        <div class="content">
+          <header class="header">
+            <div class="menu__header">
+              <div class="btn_lang menu__lang">Русский</div>
+              <div class="btn_basket menu__basket">
+                <a href="#">
+                  <img src="./img/basket.svg" alt="" /><span>10</span>
+                </a>
+              </div>
+            </div>
+          </header>
+          <div class="main">
+            <div class="container">
+              <div class="menu">
+                <!-- <div class="menu__title">Crazy Russian</div>
+                <div class="menu__adress">Moscow, Red Square, 3</div> -->
+                <div class="menu__home">
+                  <ul class="home__inner">
+                    <li class="btn_menu">
+                      <div class="home__item">
+                        <div class="menu__img menu__img--cup">
+                          <img src="./img/cup.png" alt="" />
+                        </div>
+                        <div class="menu__info" data-label="menu">Меню</div>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="home__item popup-with-form" href="#waiter-home">
+                        <div class="home__item__inner">
+                          <div class="menu__img menu__img--megafone">
+                            <object
+                              class="menu__svg"
+                              type="image/svg+xml"
+                              data="./img/megafone.svg"
+                            >
+                              <img src="./img/megafone.png" alt="" />
+                            </object>
+                          </div>
+                          <div
+                            class="menu__info menu__info--active"
+                            data-label="waiter"
+                          >
+                            Позвать официанта
+                          </div>
+                        </div>
+                      </a>
+                      <div class="comment-form__popup">
+                        <form
+                          id="waiter-home"
+                          class="
+                            menu__comment
+                            menu__comment--popup
+                            menu__comment--footer
+                            mfp-hide
+                            white-popup-block white-popup-block--footer
+                          "
+                        >
+                          <div class="comment-form__inner">
+                            <div class="comment-form__img">
+                              <img src="./img/megafone-small.svg" alt="" />
+                            </div>
+                            <div class="comment-form__text" data-label="waiter">
+                              Позвать официанта
+                            </div>
+                          </div>
+                          <div class="form-footer">
+                            <textarea
+                              class="textarea-footer"
+                              placeholder="Добавить комментарий"
+                            ></textarea>
+                            <div
+                              class="menu__comment-btn menu__comment-btn--popup"
+                            >
+                              <button type="submit" data-label="ok">
+                                Окей
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="home__item popup-with-form" href="#pay-home">
+                        <div class="home__item__inner">
+                          <div class="menu__img menu__img--pay">
+                            <object
+                              class="menu__svg menu__svg--pay"
+                              type="image/svg+xml"
+                              data="./img/pay.svg"
+                            >
+                              <img src="./img/pay.png" alt="" />
+                            </object>
+                          </div>
+                          <div
+                            class="menu__info menu__info-pl menu__info--active"
+                            data-label="bill"
+                          >
+                            Попросить счёт
+                          </div>
+                        </div>
+                      </a>
+                      <div class="comment-form__popup">
+                        <form
+                          id="pay-home"
+                          class="
+                            menu__comment
+                            menu__comment--popup
+                            menu__comment--footer
+                            mfp-hide
+                            white-popup-block white-popup-block--pay
+                          "
+                        >
+                          <div class="comment-form__inner">
+                            <div class="comment-form__img">
+                              <img src="./img/pay-small.svg" alt="" />
+                            </div>
+                            <div class="comment-form__text" data-label="bill">
+                              Попросить счёт
+                            </div>
+                          </div>
+                          <div class="form-footer">
+                            <textarea
+                              class="textarea-footer"
+                              placeholder="Добавить комментарий"
+                            ></textarea>
+                            <div class="menu__comment-radio">
+                              <input
+                                class="menu__comment-input"
+                                type="radio"
+                                name="pay"
+                                value="cart"
+                                id="cart"
+                                checked
+                              />
+                              <label
+                                class="menu__comment-label"
+                                for="cart"
+                                data-label="pay_card"
+                                >Оплата картой</label
+                              >
+                              <input
+                                class="menu__comment-input"
+                                type="radio"
+                                name="pay"
+                                value="cash"
+                                id="cash"
+                              />
+                              <label
+                                class="menu__comment-label"
+                                for="cash"
+                                data-label="pay_cash"
+                                >Оплата наличными</label
+                              >
+                            </div>
+                            <div class="menu__comment-btn">
+                              <button type="submit" data-label="ok">
+                                Окей
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                    <li class="btn_tipping">
+                      <a class="home__item tipping" href="#">
+                        <div class="menu__img menu__img--coins">
+                          <img src="./img/coins-menu.png" alt="" />
+                        </div>
+                        <div class="menu__info menu__info-pl" data-label="tips">
+                          Оставить чаевые
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="home__item popup-with-form"
+                        href="#comment-form"
+                      >
+                        <div class="menu__img menu__img--pencil">
+                          <img src="./img/pencil.png" alt="" />
+                        </div>
+                        <p
+                          class="menu__info menu__info-pl"
+                          data-label="feedback"
+                        >
+                          Оставить отзыв
+                        </p>
+                      </a>
+
+                      <div class="comment-form__popup">
+                        <form
+                          id="comment-form"
+                          class="
+                            menu__comment menu__comment--popup
+                            mfp-hide
+                            white-popup-block
+                          "
+                        >
+                          <div class="comment-form__inner">
+                            <div class="comment-form__img">
+                              <img src="./img/pencil-small.svg" alt="" />
+                            </div>
+                            <div
+                              class="comment-form__text"
+                              data-label="feedback"
+                            >
+                              Оставить отзыв
+                            </div>
+                          </div>
+                          <textarea
+                            placeholder="Добавить комментарий"
+                          ></textarea>
+                          <div class="simple-rating">
+                            <div class="simple-rating__items">
+                              <input
+                                class="simple-rating__item"
+                                id="simple-rating__5"
+                                type="radio"
+                                name="simple-rating"
+                                value="5"
+                              />
+                              <label
+                                class="simple-rating__label"
+                                for="simple-rating__5"
+                              ></label>
+                              <input
+                                class="simple-rating__item"
+                                id="simple-rating__4"
+                                type="radio"
+                                name="simple-rating"
+                                value="4"
+                              />
+                              <label
+                                class="simple-rating__label"
+                                for="simple-rating__4"
+                              ></label>
+
+                              <input
+                                class="simple-rating__item"
+                                id="simple-rating__3"
+                                type="radio"
+                                name="simple-rating"
+                                value="3"
+                              />
+                              <label
+                                class="simple-rating__label"
+                                for="simple-rating__3"
+                              ></label>
+                              <input
+                                class="simple-rating__item"
+                                id="simple-rating__2"
+                                type="radio"
+                                name="simple-rating"
+                                value="2"
+                              />
+                              <label
+                                class="simple-rating__label"
+                                for="simple-rating__2"
+                              ></label>
+
+                              <input
+                                class="simple-rating__item"
+                                id="simple-rating__1"
+                                type="radio"
+                                name="simple-rating"
+                                value="1"
+                                checked
+                              />
+                              <label
+                                class="simple-rating__label"
+                                for="simple-rating__1"
+                              ></label>
+                            </div>
+                          </div>
+                          <div
+                            class="menu__comment-btn menu__comment-btn--popup"
+                          >
+                            <button type="submit" data-label="ok">Окей</button>
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer__text">
+            Разработано студией Артель с божьей помощью. Хотите так же? Пишите
+            нам artel-studio@yandex.ru
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- page__language -->
+
+    <div class="page page__language">
+      <div class="wrapper">
+        <div class="content">
+          <div class="page-language menu__header">
+            <a class="back_menu menu__btn-language" href="#">
+              <img src="./img/back-menu.svg" alt="" />
+            </a>
+            <div class="menu__text-language" data-label="back">Назад</div>
+
+            <ul class="menu__select menu__select--page-language">
+              <!-- <li class="menu__option ru" onclick="translate('ru_RU')">
+                Русский
+              </li>
+              <li class="menu__option">China</li>
+              <li
+                class="menu__option menu__option--selected"
+                onclick="translate('en_GB')"
+              >
+                English
+              </li>
+              <li class="menu__option">German</li>
+              <li class="menu__option">Spanish</li> -->
+            </ul>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer__text">
+            Разработано студией Артель с божьей помощью. Хотите так же? Пишите
+            нам artel-studio@yandex.ru
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- page-menu -->
+
+    <div class="page page__menu">
+      <div class="wrapper">
+        <div class="content content--menu">
+          <header class="header header__fixed">
+            <div class="container">
+              <div class="menu__header menu__header--menu">
+                <a class="back_menu menu__btn" href="#">
+                  <img src="./img/back-menu.svg" alt="" />
+                </a>
+                <div class="menu__text" data-label="menu">Меню</div>
+                <div class="btn_basket menu__basket">
+                  <a href="#">
+                    <img src="./img/basket.svg" alt="" /><span>10</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="main">
+            <div class="container">
+              <div class="menu__filter">
+                <a class="menu__filter-item" href="#">Салаты</a>
+                <a class="menu__filter-item" href="#">Закуски</a>
+                <a class="menu__filter-item active" href="#">Супы</a>
+                <a class="menu__filter-item active" href="#">Горячие блюда</a>
+                <a class="menu__filter-item" href="#">Десерты</a>
+              </div>
+
+              <h2 class="menu__title">Супы</h2>
+              <div class="menu__inner">
+                <a class="popup-with-form" href="#product-popup">
+                  <div class="menu__product">
+                    <div class="menu__product-img">
+                      <img
+                        src="https://i.pinimg.com/736x/e6/fa/fd/e6fafdbb5aefbf7de67dcdf8bc9c8149.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="menu__tags">Spicy</div>
+
+                    <div class="menu__product-title">Суп грибной</div>
+                    <div class="menu__product-info">
+                      190 <span data-label="gramm">г</span>
+                    </div>
+
+                    <div class="menu__product-btn">225 <span>₽</span></div>
+                  </div>
+                </a>
+                <!-- popup description -->
+
+                <div class="product__popup">
+                  <form
+                    id="product-popup"
+                    class="
+                      menu__comment menu__comment--popup
+                      mfp-hide
+                      white-popup-block white-popup-block--product
+                    "
+                  >
+                    <div class="product__menu-item">
+                      <div class="product__menu-images">
+                        <img src="./img/food.jpg" alt="" />
+                      </div>
+                      <div class="product__tags">Spicy</div>
+                      <div class="product__close">
+                        <img src="./img/close-product.svg" alt="" />
+                      </div>
+
+                      <div class="product__menu-title">Суп грибной</div>
+                      <div class="product__menu-descr">
+                        Белое куриное мясо в хрустящей панировке, ломтик
+                        помидора, листья салата и ломтики твёрдого сыра,
+                        заправленные специальным соусом и завёрнутые в пшеничную
+                        лепёшку
+                      </div>
+
+                      <div class="product__menu-info">
+                        <div class="product__menu-info-inner accordion-header">
+                          <div class="product__menu-info-img">
+                            <img src="./img/info.svg" alt="" />
+                          </div>
+                          <div
+                            class="product__menu-info-text"
+                            data-label="about"
+                          >
+                            О продукте
+                          </div>
+                        </div>
+                        <div class="product__menu-box accordion-body">
+                          <table class="cart-product__info-table">
+                            <tr class="cart-product__info-table-row">
+                              <td
+                                class="cart-product__info-table-desc"
+                                data-label="weight"
+                              >
+                                Вес
+                              </td>
+                              <td class="cart-product__info-table-price">
+                                190 <span data-label="gramm">г</span>
+                              </td>
+                            </tr>
+                            <tr class="cart-product__info-table-row">
+                              <td
+                                class="cart-product__info-table-desc"
+                                data-label="kcal_text"
+                              >
+                                Энергетическая ценность
+                              </td>
+                              <td class="cart-product__info-table-price">
+                                552 <span data-label="kcal">ккал</span>
+                              </td>
+                            </tr>
+                            <tr class="cart-product__info-table-row">
+                              <td
+                                class="cart-product__info-table-desc"
+                                data-label="fats"
+                              >
+                                Жиры
+                              </td>
+                              <td class="cart-product__info-table-price">
+                                46<span data-label="gramm">г</span>
+                              </td>
+                            </tr>
+                            <tr class="cart-product__info-table-row">
+                              <td
+                                class="cart-product__info-table-desc"
+                                data-label="carbohydrates"
+                              >
+                                Углеводы
+                              </td>
+                              <td class="cart-product__info-table-price">
+                                18<span data-label="gramm">г</span>
+                              </td>
+                            </tr>
+                            <tr class="cart-product__info-table-row">
+                              <td
+                                class="cart-product__info-table-desc"
+                                data-label="proteins"
+                              >
+                                Белки
+                              </td>
+                              <td class="cart-product__info-table-price" data-label="proteins">
+                                38<span data-label="gramm">г</span>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="product__menu-btn">
+                        <div class="menu-minus">
+                          <img src="./img/minus.svg" alt="" />
+                        </div>
+                        <div class="product__menu-label">
+                          <div class="btn_zakaz">
+                            <span>1</span>
+
+                            <span>225 ₽</span>
+                          </div>
+                        </div>
+
+                        <div class="menu-plus">
+                          <img src="./img/plus.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="menu__product">
+                  <a href="#">
+                    <div class="menu__product-img">
+                      <!-- <img src="" alt="" /> -->
+                    </div>
+                    <div class="menu__product-wrap">
+                      <div class="menu__product-title">
+                        Солянка сборная по-домашнему
+                      </div>
+                      <div class="menu__product-info">190 г</div>
+                    </div>
+                  </a>
+                  <div class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </div>
+                </div>
+
+                <div class="menu__product">
+                  <a href="#">
+                    <div class="menu__product-img">
+                      <!-- <img src="" alt="" /> -->
+                    </div>
+                    <div class="menu__product-wrap">
+                      <div class="menu__product-title">Суп грибной</div>
+                      <div class="menu__product-info">190 г</div>
+                    </div>
+                  </a>
+                  <div class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </div>
+                </div>
+
+                <div class="menu__product">
+                  <a href="#">
+                    <div class="menu__product-img">
+                      <!-- <img src="" alt="" /> -->
+                    </div>
+                    <div class="menu__product-wrap">
+                      <div class="menu__product-title">
+                        Солянка сборная по-домашнему
+                      </div>
+                      <div class="menu__product-info">190 г</div>
+                    </div>
+                  </a>
+                  <div class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="menu__title">Горячие блюда</h2>
+              <div class="menu__inner">
+                <div class="menu__product">
+                  <a href="#">
+                    <div class="menu__product-img">
+                      <!-- <img src="" alt="" /> -->
+                      <span>Spicy</span>
+                    </div>
+                    <div class="menu__product-wrap">
+                      <div class="menu__product-title">Жареная треска</div>
+                      <div class="menu__product-info">190 г</div>
+                    </div>
+                  </a>
+                  <div class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </div>
+                </div>
+
+                <div class="menu__product">
+                  <a href="#">
+                    <div class="menu__product-img">
+                      <!-- <img src="" alt="" /> -->
+                    </div>
+                    <div class="menu__product-wrap">
+                      <div class="menu__product-title">
+                        Шашлык из куриного бедра
+                      </div>
+                      <div class="menu__product-info">190 г</div>
+                    </div>
+                  </a>
+                  <div class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </div>
+                </div>
+
+                <div class="menu__product">
+                  <a href="#">
+                    <div class="menu__product-img">
+                      <!-- <img src="" alt="" /> -->
+                      <span>Spicy</span>
+                    </div>
+                    <div class="menu__product-wrap">
+                      <div class="menu__product-title">Жареная треска</div>
+                      <div class="menu__product-info">190 г</div>
+                    </div>
+                  </a>
+                  <div class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </div>
+                </div>
+
+                <div class="menu__product">
+                  <a href="#">
+                    <div class="menu__product-img">
+                      <!-- <img src="" alt="" /> -->
+                    </div>
+                    <div class="menu__product-wrap">
+                      <div class="menu__product-title">
+                        Шашлык из куриного бедра
+                      </div>
+                      <div class="menu__product-info">190 г</div>
+                    </div>
+                  </a>
+                  <div class="menu__product-btn">
+                    <span>225 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer__menu">
+          <div class="container">
+            <div class="footer__items">
+              <a class="popup-with-form" href="#megafone"
+                ><div class="footer__item">
+                  <img src="./img/frame.svg" alt="" />
+                  <div class="footer__item-img">
+                    <img src="./img/megaphone-footer.png" alt="" />
+                  </div>
+                  <div
+                    class="footer__item-text footer__item-text--megafone"
+                    data-label="waiter_footer"
+                  >
+                    Официант
+                  </div>
+                </div>
+              </a>
+              <div class="comment-form__popup">
+                <form
+                  id="megafone"
+                  class="
+                    menu__comment menu__comment--popup menu__comment--footer
+                    mfp-hide
+                    white-popup-block white-popup-block--footer
+                  "
+                >
+                  <div class="comment-form__inner">
+                    <div class="comment-form__img">
+                      <img src="./img/megafone-small.svg" alt="" />
+                    </div>
+                    <div class="comment-form__text" data-label="waiter">
+                      Позвать официанта
+                    </div>
+                  </div>
+                  <div class="form-footer">
+                    <textarea
+                      class="textarea-footer"
+                      placeholder="Добавить комментарий"
+                    ></textarea>
+                    <div class="menu__comment-btn menu__comment-btn--popup">
+                      <button type="submit" data-label="ok">Окей</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <a class="popup-with-form" href="#pay">
+                <div class="footer__item">
+                  <img src="./img/frame.svg" alt="" />
+                  <div class="footer__item-img footer__item-img--pay">
+                    <img src="./img/pay-footer.png" alt="" />
+                  </div>
+                  <div
+                    class="footer__item-text footer__item-text--pay"
+                    data-label="bill_footer"
+                  >
+                    Счёт
+                  </div>
+                </div>
+              </a>
+              <div class="comment-form__popup">
+                <form
+                  id="pay"
+                  class="
+                    menu__comment menu__comment--popup menu__comment--footer
+                    mfp-hide
+                    white-popup-block white-popup-block--pay
+                  "
+                >
+                  <div class="comment-form__inner">
+                    <div class="comment-form__img">
+                      <img src="./img/pay-small.svg" alt="" />
+                    </div>
+                    <div class="comment-form__text" data-label="waiter">
+                      Позвать официанта
+                    </div>
+                  </div>
+                  <div class="form-footer">
+                    <textarea
+                      class="textarea-footer"
+                      placeholder="Добавить комментарий"
+                    ></textarea>
+                    <div class="menu__comment-radio">
+                      <input
+                        class="menu__comment-input"
+                        type="radio"
+                        name="pay"
+                        value="cart"
+                        id="card-radio"
+                        checked
+                      />
+                      <label
+                        class="menu__comment-label"
+                        for="card-radio"
+                        data-label="pay_card"
+                        >Оплата картой</label
+                      >
+                      <input
+                        class="menu__comment-input"
+                        type="radio"
+                        name="pay"
+                        value="cash"
+                        id="cash-radio"
+                      />
+                      <label
+                        class="menu__comment-label"
+                        for="cash-radio"
+                        data-label="pay_cash"
+                        >Оплата наличными</label
+                      >
+                    </div>
+                    <div class="menu__comment-btn">
+                      <button type="submit" data-label="ok">Окей</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="footer__item btn_tipping">
+                <img src="./img/frame.svg" alt="" />
+                <div class="footer__item-img">
+                  <img src="./img/coins-footer.png" alt="" />
+                </div>
+                <div
+                  class="footer__item-text footer__item-text--coins"
+                  data-label="tips"
+                >
+                  Чаевые
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- page-preorder -->
+    <div class="page page__preorder">
+      <div class="wrapper">
+        <div class="content content--preorder">
+          <header class="header header__fixed">
+            <div class="container">
+              <div class="menu__header menu__header--menu">
+                <a class="back_menu menu__btn" href="#">
+                  <img src="./img/back-menu.svg" alt="" />
+                </a>
+                <div class="menu__text" data-label="basket_back">Корзина</div>
+              </div>
+            </div>
+          </header>
+
+          <div class="basket">
+            <div class="container">
+              <div class="basket__inner">
+                <div class="basket__item basket__item--preorder">
+                  <div class="basket__item-img basket__item-img--preorder">
+                    <!-- <img src="" alt=""> -->
+                  </div>
+                  <div class="basket__item-box basket__item-box--preorder">
+                    <div class="basket__item-info-wrap">
+                      <div class="basket__item-title">
+                        Солянка сборная по-домашнему
+                      </div>
+                      <div class="basket__item-info">190 г</div>
+                      <button class="close-basket">
+                        <img src="./img/close-basket.svg" alt="" />
+                      </button>
+                    </div>
+
+                    <div class="basket__number">
+                      <button class="basket__number-minus">
+                        <img src="./img/minus.svg" alt="" />
+                      </button>
+                      <input type="number" name="product" />
+                      <div class="basket__number-label">
+                        <span> 225 ₽</span>
+                      </div>
+
+                      <button class="basket__number-plus">
+                        <img src="./img/plus.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="basket__item basket__item--preorder">
+                  <div class="basket__item-img basket__item-img--preorder">
+                    <!-- <img src="" alt=""> -->
+                  </div>
+                  <div class="basket__item-box basket__item-box--preorder">
+                    <div class="basket__item-info-wrap">
+                      <div class="basket__item-title">Суп грибной</div>
+                      <div class="basket__item-info">190 г</div>
+                      <button class="close-basket">
+                        <img src="./img/close-basket.svg" alt="" />
+                      </button>
+                    </div>
+
+                    <div class="basket__number">
+                      <button class="basket__number-minus">
+                        <img src="./img/minus.svg" alt="" />
+                      </button>
+                      <input type="number" name="product" />
+                      <div class="basket__number-label">
+                        <span> 225 ₽</span>
+                      </div>
+
+                      <button class="basket__number-plus">
+                        <img src="./img/plus.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                class="btn_preorder basket__preorder-btn"
+                data-label="order"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+        </div>
+        <footer class="footer__menu">
+          <div class="container">
+            <div class="footer__items">
+              <a class="popup-with-form" href="#waiter-basket-page"
+                ><div class="footer__item">
+                  <img src="./img/frame.svg" alt="" />
+                  <div class="footer__item-img">
+                    <img src="./img/megaphone-footer.png" alt="" />
+                  </div>
+                  <div
+                    class="footer__item-text footer__item-text--megafone"
+                    data-label="waiter_footer"
+                  >
+                    Официант
+                  </div>
+                </div>
+              </a>
+              <div class="comment-form__popup">
+                <form
+                  id="waiter-basket-page"
+                  class="
+                    menu__comment menu__comment--popup menu__comment--footer
+                    mfp-hide
+                    white-popup-block white-popup-block--footer
+                  "
+                >
+                  <div class="comment-form__inner">
+                    <div class="comment-form__img">
+                      <img src="./img/megafone-small.svg" alt="" />
+                    </div>
+                    <div class="comment-form__text" data-label="waiter">
+                      Позвать официанта
+                    </div>
+                  </div>
+                  <div class="form-footer">
+                    <textarea
+                      class="textarea-footer"
+                      placeholder="Добавить комментарий"
+                    ></textarea>
+                    <div class="menu__comment-btn menu__comment-btn--popup">
+                      <button type="submit" data-label="ok">Окей</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <a class="popup-with-form" href="#pay-basket-page">
+                <div class="footer__item">
+                  <img src="./img/frame.svg" alt="" />
+                  <div class="footer__item-img footer__item-img--pay">
+                    <img src="./img/pay-footer.png" alt="" />
+                  </div>
+                  <div
+                    class="footer__item-text footer__item-text--pay"
+                    data-label="bill_footer"
+                  >
+                    Счёт
+                  </div>
+                </div>
+              </a>
+              <div class="comment-form__popup">
+                <form
+                  id="pay-basket-page"
+                  class="
+                    menu__comment menu__comment--popup menu__comment--footer
+                    mfp-hide
+                    white-popup-block white-popup-block--pay
+                  "
+                >
+                  <div class="comment-form__inner">
+                    <div class="comment-form__img">
+                      <img src="./img/pay-small.svg" alt="" />
+                    </div>
+                    <div class="comment-form__text" data-label="bill">
+                      Попросить счёт
+                    </div>
+                  </div>
+                  <div class="form-footer">
+                    <textarea
+                      class="textarea-footer"
+                      placeholder="Добавить комментарий"
+                    ></textarea>
+                    <div class="menu__comment-radio">
+                      <input
+                        class="menu__comment-input"
+                        type="radio"
+                        name="pay"
+                        value="cart"
+                        id="cart-radio"
+                        checked
+                      />
+                      <label
+                        class="menu__comment-label"
+                        for="cart-radio"
+                        data-label="pay_card"
+                        >Оплата картой</label
+                      >
+                      <input
+                        class="menu__comment-input"
+                        type="radio"
+                        name="pay"
+                        value="cash"
+                        id="cashradio"
+                      />
+                      <label
+                        class="menu__comment-label"
+                        for="cashradio"
+                        data-label="pay_cash"
+                        >Оплата наличными</label
+                      >
+                    </div>
+                    <div class="menu__comment-btn">
+                      <button type="submit" data-label="ok">Окей</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="footer__item btn_tipping">
+                <img src="./img/frame.svg" alt="" />
+                <div class="footer__item-img">
+                  <img src="./img/coins-footer.png" alt="" />
+                </div>
+                <div
+                  class="footer__item-text footer__item-text--coins"
+                  data-label="tips"
+                >
+                  Чаевые
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- page__basket -->
+
+    <div class="page page__basket">
+      <div class="wrapper">
+        <div class="content content--basket">
+          <header class="header header__fixed">
+            <div class="container">
+              <div class="menu__header menu__header--menu">
+                <a class="back_menu menu__btn" href="#">
+                  <img src="./img/back-menu.svg" alt="" />
+                </a>
+                <div class="menu__text" data-label="basket_back">Корзина</div>
+              </div>
+            </div>
+          </header>
+
+          <div class="basket">
+            <div class="container">
+              <div class="basket__inner">
+                <div class="basket__total">
+                  <div class="basket__total-products">2 товара на сумму</div>
+                  <div class="basket__total-price">450 ₽</div>
+                </div>
+                <div class="basket__item">
+                  <div class="basket__item-img">
+                    <!-- <img src="" alt="" /> -->
+                  </div>
+                  <div class="basket__item-box">
+                    <div class="basket__item-title">Суп грибной</div>
+                    <div class="basket__item-info">190 г</div>
+                  </div>
+                  <div class="basket__item-price">225 ₽</div>
+                </div>
+                <div class="basket__item">
+                  <div class="basket__item-img">
+                    <!-- <img src="" alt="" /> -->
+                  </div>
+                  <div class="basket__item-box">
+                    <div class="basket__item-title">
+                      Солянка сборная по-домашнему
+                    </div>
+                    <div class="basket__item-info">190 г</div>
+                  </div>
+                  <div class="basket__item-price">225 ₽</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer__menu">
+          <div class="container">
+            <div class="footer__items">
+              <a class="popup-with-form" href="#waiter-popUP"
+                ><div class="footer__item">
+                  <img src="./img/frame.svg" alt="" />
+                  <div class="footer__item-img">
+                    <img src="./img/megaphone-footer.png" alt="" />
+                  </div>
+                  <div
+                    class="footer__item-text footer__item-text--megafone"
+                    data-label="waiter_footer"
+                  >
+                    Официант
+                  </div>
+                </div>
+              </a>
+              <div class="comment-form__popup">
+                <form
+                  id="waiter-popUP"
+                  class="
+                    menu__comment menu__comment--popup menu__comment--footer
+                    mfp-hide
+                    white-popup-block white-popup-block--footer
+                  "
+                >
+                  <div class="comment-form__inner">
+                    <div class="comment-form__img">
+                      <img src="./img/megafone-small.svg" alt="" />
+                    </div>
+                    <div class="comment-form__text" data-label="waiter">
+                      Позвать официанта
+                    </div>
+                  </div>
+                  <div class="form-footer">
+                    <textarea
+                      class="textarea-footer"
+                      placeholder="Добавить комментарий"
+                    ></textarea>
+                    <div class="menu__comment-btn menu__comment-btn--popup">
+                      <button type="submit" data-label="ok">Окей</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <a class="popup-with-form" href="#pay-popUP">
+                <div class="footer__item">
+                  <img src="./img/frame.svg" alt="" />
+                  <div class="footer__item-img footer__item-img--pay">
+                    <img src="./img/pay-footer.png" alt="" />
+                  </div>
+                  <div
+                    class="footer__item-text footer__item-text--pay"
+                    data-label="bill_footer"
+                  >
+                    Счёт
+                  </div>
+                </div>
+              </a>
+              <div class="comment-form__popup">
+                <form
+                  id="pay-popUP"
+                  class="
+                    menu__comment menu__comment--popup menu__comment--footer
+                    mfp-hide
+                    white-popup-block white-popup-block--pay
+                  "
+                >
+                  <div class="comment-form__inner">
+                    <div class="comment-form__img">
+                      <img src="./img/pay-small.svg" alt="" />
+                    </div>
+                    <div class="comment-form__text" data-label="bill">
+                      Попросить счёт
+                    </div>
+                  </div>
+                  <div class="form-footer">
+                    <textarea
+                      class="textarea-footer"
+                      placeholder="Добавить комментарий"
+                    ></textarea>
+                    <div class="menu__comment-radio">
+                      <input
+                        class="menu__comment-input"
+                        type="radio"
+                        name="pay"
+                        value="cart"
+                        id="cart_id"
+                        checked
+                      />
+                      <label
+                        class="menu__comment-label"
+                        for="cart_id"
+                        data-label="pay_card"
+                        >Оплата картой</label
+                      >
+                      <input
+                        class="menu__comment-input"
+                        type="radio"
+                        name="pay"
+                        value="cash"
+                        id="cash_id"
+                      />
+                      <label
+                        class="menu__comment-label"
+                        for="cash_id"
+                        data-label="pay_cash"
+                        >Оплата наличными</label
+                      >
+                    </div>
+                    <div class="menu__comment-btn">
+                      <button type="submit" data-label="ok">Окей</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="footer__item btn_tipping">
+                <img src="./img/frame.svg" alt="" />
+                <div class="footer__item-img">
+                  <img src="./img/coins-footer.png" alt="" />
+                </div>
+                <div
+                  class="footer__item-text footer__item-text--coins"
+                  data-label="tips"
+                >
+                  Чаевые
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- page-iframe -->
+
+    <div class="page page__iframe">
+      <div class="wrapper">
+        <div class="content">
+          <header class="header">
+            <div class="container">
+              <div class="menu__header menu__header--menu">
+                <div class="back_menu menu__btn">
+                  <img src="./img/back-menu.svg" alt="" />
+                </div>
+                <div class="menu__text" data-label="menu">Меню</div>
+                <div class="btn_basket menu__basket">
+                  <a href="#">
+                    <img src="./img/basket.svg" alt="" /><span>10</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <iframe allowfullscreen> </iframe>
+        </div>
+        <footer class="footer__menu">
+          <div class="container">
+            <div class="footer__items">
+              <a class="popup-with-form" href="#iframe-waiter"
+                ><div class="footer__item">
+                  <img src="./img/frame.svg" alt="" />
+                  <div class="footer__item-img">
+                    <img src="./img/megaphone-footer.png" alt="" />
+                  </div>
+                  <div
+                    class="footer__item-text footer__item-text--megafone"
+                    data-label="waiter_footer"
+                  >
+                    Официант
+                  </div>
+                </div>
+              </a>
+              <div class="comment-form__popup">
+                <form
+                  id="iframe-waiter"
+                  class="
+                    menu__comment menu__comment--popup menu__comment--footer
+                    mfp-hide
+                    white-popup-block white-popup-block--footer
+                  "
+                >
+                  <div class="comment-form__inner">
+                    <div class="comment-form__img">
+                      <img src="./img/megafone-small.svg" alt="" />
+                    </div>
+                    <div class="comment-form__text" data-label="waiter">
+                      Позвать официанта
+                    </div>
+                  </div>
+                  <div class="form-footer">
+                    <textarea
+                      class="textarea-footer"
+                      placeholder="Добавить комментарий"
+                    ></textarea>
+                    <div class="menu__comment-btn menu__comment-btn--popup">
+                      <button type="submit" data-label="ok">Окей</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <a class="popup-with-form" href="#pay-iframe">
+                <div class="footer__item">
+                  <img src="./img/frame.svg" alt="" />
+                  <div class="footer__item-img footer__item-img--pay">
+                    <img src="./img/pay-footer.png" alt="" />
+                  </div>
+                  <div
+                    class="footer__item-text footer__item-text--pay"
+                    data-label="bill_footer"
+                  >
+                    Счёт
+                  </div>
+                </div>
+              </a>
+              <div class="comment-form__popup">
+                <form
+                  id="pay-iframe"
+                  class="
+                    menu__comment menu__comment--popup menu__comment--footer
+                    mfp-hide
+                    white-popup-block white-popup-block--pay
+                  "
+                >
+                  <div class="comment-form__inner">
+                    <div class="comment-form__img">
+                      <img src="./img/pay-small.svg" alt="" />
+                    </div>
+                    <div class="comment-form__text" data-label="bill">
+                      Попросить счёт
+                    </div>
+                  </div>
+                  <div class="form-footer">
+                    <textarea
+                      class="textarea-footer"
+                      placeholder="Добавить комментарий"
+                    ></textarea>
+                    <div class="menu__comment-radio">
+                      <input
+                        class="menu__comment-input"
+                        type="radio"
+                        name="pay"
+                        value="cart"
+                        id="cart-id"
+                        checked
+                      />
+                      <label
+                        class="menu__comment-label"
+                        for="cart-id"
+                        data-label="pay_card"
+                        >Оплата картой</label
+                      >
+                      <input
+                        class="menu__comment-input"
+                        type="radio"
+                        name="pay"
+                        value="cashd"
+                        id="cash-id"
+                      />
+                      <label
+                        class="menu__comment-label"
+                        for="cash-id"
+                        data-label="pay_cash"
+                        >Оплата наличными</label
+                      >
+                    </div>
+                    <div class="menu__comment-btn">
+                      <button type="submit" data-label="ok">Окей</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="footer__item btn_tipping">
+                <img src="./img/frame.svg" alt="" />
+                <div class="footer__item-img">
+                  <img src="./img/coins-footer.png" alt="" />
+                </div>
+                <div
+                  class="footer__item-text footer__item-text--coins"
+                  data-label="tips"
+                >
+                  Чаевые
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- page-thank -->
+    <div class="page page__thank">
+      <div class="wrapper">
+        <div class="content">
+          <main class="thank">
+            <h1 class="thank__title" data-label="thank">Спасибо за заказ!</h1>
+            <div class="thank__btn-inner">
+              <a class="thank__btn" href="#" data-label="ok">Окей</a>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <!-- page-tipping -->
+    <div class="page page__tipping">
+      <div class="wrapper">
+        <div class="content">
+          <div class="page-tipping">
+            <div class="tipping__header">
+              <a class="back_menu menu__btn" href="#">
+                <img src="./img/back-menu.svg" alt="" />
+              </a>
+            </div>
+            <div class="container">
+              <div class="tipping__bg">
+                <img src="./img/coins.svg" alt="" />
+              </div>
+
+              <h2 class="tipping__title">Оставить чаевые</h2>
+
+              <form class="tipping__form">
+                <div class="tipping__form-inner">
+                  <div class="tipping__input">
+                    <div class="tipping__input-text">Введите сумму</div>
+                    <input class="tipping__input-cash" type="text" />
+                    <span>₽</span>
+                  </div>
+                  <div class="tipping__radio">
+                    <input
+                      type="radio"
+                      name="cash"
+                      value="xs"
+                      id="xs"
+                      checked
+                    />
+                    <label for="xs">100 ₽</label>
+
+                    <input type="radio" name="cash" value="s" id="s" />
+                    <label for="s">200 ₽</label>
+
+                    <input type="radio" name="cash" value="m" id="m" />
+                    <label for="m">300 ₽</label>
+
+                    <input type="radio" name="cash" value="l" id="l" />
+                    <label for="l">500 ₽</label>
+                  </div>
+                  <textarea
+                    class="tipping__input-textarea"
+                    placeholder="Добавить комментарий"
+                  ></textarea>
+                </div>
+
+                <a href="#" class="googlepay"> Pay</a>
+                <a href="#" class="bankcard">Банковская карта</a>
+
+                <div class="tipping__label">
+                  Совершая платеж, вы соглашаетесь с
+                  <a href="#">условиями</a> сервиса.
+                </div>
+              </form>
+            </div>
+
+            <footer class="footer">
+              <div class="footer__text">
+                Разработано студией Артель с божьей помощью. Хотите так же?
+                Пишите нам artel-studio@yandex.ru
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

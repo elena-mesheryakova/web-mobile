@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ristoranta</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/magnific-popup.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header class="header">
+          <div class="container">
+            <div class="menu__header menu__header--menu">
+              <a class="menu__btn" href="#">
+                <img src="./img/back-menu.svg" alt="" />
+              </a>
+              <div class="menu__text">Корзина</div>
+            </div>
+          </div>
+        </header>
+
+        <main class="basket">
+          <div class="container">
+            <div class="basket__inner">
+              <div class="basket__total">
+                <div class="basket__total-products">2 товара на сумму</div>
+                <div class="basket__total-price">450 ₽</div>
+              </div>
+              <div class="basket__item">
+                <div class="basket__item-img">
+                  <!-- <img src="" alt="" /> -->
+                </div>
+                <div class="basket__item-box">
+                  <div class="basket__item-title">Суп грибной</div>
+                  <div class="basket__item-info">190 г</div>
+                </div>
+                <div class="basket__item-price">225 ₽</div>
+              </div>
+              <div class="basket__item">
+                <div class="basket__item-img">
+                  <!-- <img src="" alt="" /> -->
+                </div>
+                <div class="basket__item-box">
+                  <div class="basket__item-title">
+                    Солянка сборная по-домашнему
+                  </div>
+                  <div class="basket__item-info">190 г</div>
+                </div>
+                <div class="basket__item-price">225 ₽</div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer__menu">
+        <div class="container">
+          <div class="footer__items">
+            <a class="popup-with-form" href="#megafone"
+              ><div class="footer__item">
+                <img src="./img/frame.svg" alt="" />
+                <div class="footer__item-img">
+                  <img src="./img/megaphone-footer.png" alt="" />
+                </div>
+                <div class="footer__item-text footer__item-text--megafone">
+                  Официант
+                </div>
+              </div>
+            </a>
+            <div class="comment-form__popup">
+              <form
+                id="megafone"
+                class="
+                  menu__comment menu__comment--popup menu__comment--footer
+                  mfp-hide
+                  white-popup-block white-popup-block--footer
+                "
+              >
+                <div class="comment-form__inner">
+                  <div class="comment-form__img">
+                    <img src="./img/megafone-small.svg" alt="" />
+                  </div>
+                  <div class="comment-form__text">Позвать официанта</div>
+                </div>
+                <div class="form-footer">
+                  <textarea
+                    class="textarea-footer"
+                    placeholder="Добавить комментарий"
+                  ></textarea>
+                  <div class="menu__comment-btn menu__comment-btn--popup">
+                    <button type="submit">Окей</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <a class="popup-with-form" href="#pay">
+              <div class="footer__item">
+                <img src="./img/frame.svg" alt="" />
+                <div class="footer__item-img footer__item-img--pay">
+                  <img src="./img/pay-footer.png" alt="" />
+                </div>
+                <div class="footer__item-text footer__item-text--pay">Счёт</div>
+              </div>
+            </a>
+            <div class="comment-form__popup">
+              <form
+                id="pay"
+                class="
+                  menu__comment menu__comment--popup menu__comment--footer
+                  mfp-hide
+                  white-popup-block white-popup-block--pay
+                "
+              >
+                <div class="comment-form__inner">
+                  <div class="comment-form__img">
+                    <img src="./img/pay-small.svg" alt="" />
+                  </div>
+                  <div class="comment-form__text">Позвать официанта</div>
+                </div>
+                <div class="form-footer">
+                  <textarea
+                    class="textarea-footer"
+                    placeholder="Добавить комментарий"
+                  ></textarea>
+                  <div class="menu__comment-radio">
+                    <input
+                      class="menu__comment-input"
+                      type="radio"
+                      name="pay"
+                      value="cart"
+                      id="cart"
+                      checked
+                    />
+                    <label class="menu__comment-label" for="cart"
+                      >Оплата картой</label
+                    >
+                    <input
+                      class="menu__comment-input"
+                      type="radio"
+                      name="pay"
+                      value="cash"
+                      id="cash"
+                    />
+                    <label class="menu__comment-label" for="cash"
+                      >Оплата наличными</label
+                    >
+                  </div>
+                  <div class="menu__comment-btn">
+                    <button type="submit">Окей</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <a href="#">
+              <div class="footer__item">
+                <img src="./img/frame.svg" alt="" />
+                <div class="footer__item-img">
+                  <img src="./img/coins-footer.png" alt="" />
+                </div>
+                <div class="footer__item-text footer__item-text--coins">
+                  Чаевые
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+ 
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/main.js
+    "></script>
+  </body>
+</html>

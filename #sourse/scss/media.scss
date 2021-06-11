@@ -1,0 +1,29 @@
+@media (max-width: 375px) {
+  .menu__product,
+  .menu__product-img {
+    max-width: 150px;
+  }
+
+  .menu__product-img img {
+    width: 100%;
+  }
+  .menu__product-img::before {
+    top: 50px;
+    left: 64px;
+  }
+  .menu__product-btn span {
+    padding: 8px 46px;
+  }
+}
+@media (max-width: 345px) {
+  .menu__product {
+    max-width: 166px;
+  }
+  .menu__product-img::before {
+    top: 55px;
+    left: 70px;
+  }
+  .menu__product-btn span {
+    padding: 8px 54px;
+  }
+}
